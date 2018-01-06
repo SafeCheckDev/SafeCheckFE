@@ -10,3 +10,6 @@ module.exports = {
   postUrl: 'post-endpoint.url'
 };
 ```
+## Testing
+
+We're using Jest for unit testing. Run with `npm test`.

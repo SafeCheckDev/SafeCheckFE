@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Logo from '../images/safecheck-logo-black.png';
+import Logo from '../../images/safecheck-logo-black.png';
 
 const Header = ({ onChange }) => (
   <nav
