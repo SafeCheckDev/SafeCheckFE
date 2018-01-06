@@ -67,22 +67,12 @@ class App extends React.Component {
 
   changeForm(e) {
     const form = e.target.value;
-    const url = form === 'TEST' ? data.testUrl : data.testUrl2;
+    const url = data.testUrl;
     this.setState({ form });
 
-    fetch(`${url}${form}`)
+    fetch(url)
       .then(response => response.json())
-      .then((pageData) => {
-        if (pageData.name === 'TEST') {
-          pageData.name = 'Holiday Club Registration';
-        } else if (pageData.name === 'newform') {
-          pageData.name = 'Accident Form';
-        } else {
-          pageData.name = 'Event Registration';
-          pageData.sections[1].repeatable = true;
-        }
-        this.setState({ data: pageData });
-      });
+      .then(pageData => this.setState({ data: pageData }));
   }
 
   submitForm(e) {
