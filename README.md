@@ -1,8 +1,8 @@
-Front-end assets for SafeCheck application
+# Front-end assets for SafeCheck application
 
-The front-end is using react, webpack and babel to compile the UI.
+The front-end for SafeCheck is using react, webpack and babel to compile the UI.
 
-To build add a file called `env.js` to the view directory. Including:
+To build, add a file called `env.js` to the view directory. Including:
 
 ```javascript
 module.exports = {
