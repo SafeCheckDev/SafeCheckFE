@@ -3,13 +3,13 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const path = require('path');
 
 const HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
-  template: __dirname + '/app/index.html',
+  template: path.join(__dirname, 'app', 'index.html'),
   filename: 'index.html',
   inject: 'body'
 });
 
 module.exports = {
-  entry: __dirname + '/app/index.js',
+  entry: path.join(__dirname, 'app', 'index.js'),
   resolve: {
     extensions: ['.js', '.jsx']
   },
@@ -34,7 +34,7 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + '/build',
+    path: path.join(__dirname, 'build'),
     filename: 'build.js'
   },
   context: path.join(__dirname, 'app'),
