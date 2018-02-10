@@ -1,6 +1,6 @@
 import React from 'react';
 import Form from './Form';
-import Header from './Header';
+import Header from './Header/Header';
 import Logo from '../images/safecheck-logo-white.png';
 import data from '../../endpoints';
 
