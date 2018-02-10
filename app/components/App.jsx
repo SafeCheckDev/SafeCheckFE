@@ -2,7 +2,7 @@ import React from 'react';
 import Form from './Form';
 import Header from './Header';
 import Logo from '../images/safecheck-logo-white.png';
-import data from '../../data';
+import data from '../../endpoints';
 
 let signaturePad;
 
@@ -67,7 +67,7 @@ class App extends React.Component {
 
   changeForm(e) {
     const form = e.target.value;
-    const url = data.testUrl;
+    const url = data.form;
     this.setState({ form });
 
     fetch(url)
