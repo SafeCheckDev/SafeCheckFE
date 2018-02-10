@@ -35,7 +35,7 @@ const Form = ({
           </h2>
 
           <div>
-            {formFields(section.questions, `Section${i + 1}`)}
+            {formFields(section.items, `Section${i + 1}`)}
             {section.repeatable &&
               <button
                 type="button"
