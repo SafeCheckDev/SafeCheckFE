@@ -1,3 +1,52 @@
 {
-  "name": "Accident Form"
+  "id": "someHashValue-kajbenf875btler7fgoa8erfhbs",
+  "name": "Accident Form",
+  "fields": [
+    {
+      "id": "siurbgvsblih",
+      "type": "short_text",
+      "title": "First name"
+    },
+    {
+      "id": "kgvkygbukygb",
+      "type": "email",
+      "title": "Email address"
+    },
+    {
+      "id": "DlXFaesGBpoF",
+      "type": "long_text",
+      "title": "Tell me a bit about yourself",
+      "extraInformation": {
+        "description": "Include personality traits, hair colour and music preference."
+      }
+    },
+    {
+      "id": "LZRfhsiurFGSZ",
+      "type": "group",
+      "title": "This is a new section of information",
+      "repeatable": true,
+      "fields": [
+        {
+          "id": "siurbgvsblih",
+          "type": "short_text",
+          "title": "Child's name"
+        },
+        {
+          "id": "sliuhrfSHRIhb",
+          "type": "number",
+          "title": "Child's age"
+        },
+        {
+          "id": "SERHjnsfueSER",
+          "type": "date",
+          "title": "Child's birthday"
+        }
+      ]
+    },
+    {
+      "id": "SRFnsfusSFR",
+      "type": "signature",
+      "title": "Signature"
+    }
+  ]
 }
