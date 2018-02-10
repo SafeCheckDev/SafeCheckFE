@@ -12,4 +12,4 @@ module.exports = {
 ```
 ## Testing
 
-We're using Jest for unit testing. Run with `npm test`.
+We're using Jest and enzyme for unit testing. Run with `npm test`.

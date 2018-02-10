@@ -1,3 +1,8 @@
-test('adds 1 + 2 to equal 3', () => {
-  expect(1 + 2).toBe(3);
+import React from 'react';
+import { shallow } from 'enzyme';
+import Header from './Header';
+
+test('renders a Header component', () => {
+  const wrapper = shallow(<Header />);
+  expect(wrapper.find('nav').exists()).toBe(true);
 });
